@@ -33,3 +33,10 @@ sam local invoke --no-event HelloWorldFunction
 sam local start-api
 curl http://127.0.0.1:3000/hello
 ```
+
+## Test local event
+
+```
+sam local generate-event apigateway aws-proxy >./apigatewayevent.json
+sam local invoke --event ./apigatewayevent.json HelloWorldFunction
+```
