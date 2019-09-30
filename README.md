@@ -27,3 +27,9 @@ cd ..
 sam build
 sam local invoke --no-event HelloWorldFunction
 ```
+## Run ret demo 
+
+```
+sam local start-api
+curl http://127.0.0.1:3000/hello
+```
