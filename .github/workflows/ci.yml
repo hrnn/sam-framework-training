@@ -1,0 +1,12 @@
+name: ci
+on: [push]
+
+jobs:
+  ci-job:
+    name: CI test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: List
+        run: ls
+    
